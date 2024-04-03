@@ -25,8 +25,8 @@ messaging.onBackgroundMessage(payload => {
 
   const title = payload.notification.title
   const notification = {
-    body: "Notification Body",
-    icon: "/icon.png"
+    // body: "Notification Body",
+    // icon: "/icon.png"
   }
 
   // Show notification when message received
