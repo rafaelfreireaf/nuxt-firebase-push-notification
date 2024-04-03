@@ -19,12 +19,12 @@ const app = firebase.initializeApp({
 const messaging = firebase.messaging()
 
 // Listen to bg messages
-messaging.onBackgroundMessage(payload => {
-  console.log("Received a bg message: ", payload);
+// messaging.onBackgroundMessage(payload => {
+//   console.log("Received a bg message: ", payload);
 
 
-  const title = payload.notification.title
+//   const title = payload.notification.title
 
-  // Show notification when message received
-  self.registration.showNotification(title);
-})
+//   // Show notification when message received
+//   self.registration.showNotification(title);
+// })
