@@ -24,11 +24,7 @@ messaging.onBackgroundMessage(payload => {
 
 
   const title = payload.notification.title
-  const notification = {
-    // body: "Notification Body",
-    // icon: "/icon.png"
-  }
 
   // Show notification when message received
-  self.registration.showNotification(title, notification);
+  self.registration.showNotification(title);
 })
