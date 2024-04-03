@@ -30,7 +30,7 @@ export default defineNuxtPlugin(() => {
   //   - When the page is open
   //   - When the user clicked the bg notification
   onMessage(messaging, (payload) => {
-    alert(JSON.stringify(payload, null, 2))
+    console.log(JSON.stringify(payload, null, 2))
   })
   
   return {
