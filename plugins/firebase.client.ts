@@ -26,9 +26,6 @@ export default defineNuxtPlugin(() => {
   
   const messaging = getMessaging(app)
   
-  // This runs whenever a message is received:
-  //   - When the page is open
-  //   - When the user clicked the bg notification
   onMessage(messaging, (payload) => {
     console.log(JSON.stringify(payload, null, 2))
   })
